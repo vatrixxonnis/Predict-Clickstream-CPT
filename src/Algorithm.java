@@ -145,6 +145,7 @@ public class Algorithm {
 		// Train the prediction model
 		CPTPlusPredictor predictionModel = new CPTPlusPredictor("CPT+", optionalParameters);
 		predictionModel.Train(trainingSet.getSequences());
+		// Uncomment this line to print the training sequences to the console but it may be very long
 		// printTrainingSequences(trainingSet);
 		saveTrainedModel(predictionModel);
 	}
